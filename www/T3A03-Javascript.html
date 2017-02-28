@@ -1,0 +1,46 @@
+<script type="text/javascript">
+function onoff(){
+  p = document.getElementById('button02').value;
+  if(p == "Off"){
+    document.getElementById("button02").value="On";
+  }else{
+    document.getElementById("button02").value="Off";
+  }
+}
+function life(){
+  l = document.getElementById('BoL').value;
+  if(l == "click here to find the secret of life"){
+    document.getElementById("BoL").value="Pretend you didn't see that";
+    document.getElementById('Happy').src ='https://s-media-cache-ak0.pinimg.com/originals/20/4d/f1/204df1c162399f48851ae42687d3249f.jpg'
+    document.getElementById('secret').innerHTML = 'Life is meaningless'
+  }else{
+    document.getElementById("BoL").value="click here to find the secret of life";
+    document.getElementById('Happy').src ='https://lovesunseeker.files.wordpress.com/2009/11/full_of_happyness__by_tostandalone-1.jpg'
+    document.getElementById('secret').innerHTML = 'What is the secret of life?'
+  }
+}
+</script>
+<h1 align = center>
+    T3A03 by Dillan
+    <br><br>
+<table border = 5>
+    <tr>
+        <td><input type = textbox id="PepeTextbox" value ="write a meme here">
+    <input type = button value="make a meme" onclick= "{
+    document.getElementById('PepeDiv01').innerHTML = document.getElementById('PepeTextbox').value
+    }"></td><td></td>
+    </tr>
+    <tr>
+        <td>    <img src ="https://media.tenor.co/images/5acee3a94c6b920b1153d766499dd95a/raw" width = 400 height = 650>
+    <div id = "PepeDiv01">Meme</div></td><td><img id= Happy src = "https://lovesunseeker.files.wordpress.com/2009/11/full_of_happyness__by_tostandalone-1.jpg" width = 400 height = 300><div id=secret>What is the secret of Life?</div>
+    </td>
+    </tr>
+    <tr>
+        <td> </td><td><input id=BoL type= button value = "click here to find the secret of life" onclick= "{life()
+}"></td>
+    </tr>
+
+    
+    
+</table>
+</h1>
