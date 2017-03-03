@@ -1,0 +1,39 @@
+<body Bgcolor="silver"> 
+T3A04-ForLoops.html
+
+
+
+
+<h1 align=center>t1a03-color by Dillan </h1>
+<input id="myInput" type=text value="12"> <br><br>
+
+
+<input type=button value="Loop Add" onclick="{
+  myOut = document.getElementById('myArea')
+  myIn  = document.getElementById('myInput')
+  myOut.innerHTML = ''
+
+  for (myCount = 1; myCount <= myIn.value; myCount++){
+    if ((myCount >= 0) && (myCount <=3) ){
+      myOut.innerHTML +='<font color=red>' + myCount + ' Dillan'+'</font></br>'
+    } 
+    if (myCount == 4){
+    myOut.innerHTML +='<font color=blue>' + myCount +' Dillan' +'</font></br>'
+    }
+    if (myCount >=11 ){
+    myOut.innerHTML +='<font color=Green>' + myCount +' Dillan'+ '</font></br>'
+    }
+    else {
+    document.getElementById('myArea').innerHTML += myCount + ' Dillan' + '<br>' 
+    }
+  }
+}"> <br><br>
+
+<input type=button value="show Div after clicking Loop Add" onclick="{  
+   alert(myOut.innerHTML)
+}">
+
+<div id="myArea" > Your output  will  go here <br></div> <br>
+<br><br><br><br><br><br><br><br><br>
+<input type=button value="Back" style="font-size:25px" onclick="{location='window.history.back'}">
+<br><br>
